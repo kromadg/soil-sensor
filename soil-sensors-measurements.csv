@@ -1,0 +1,72 @@
+Date,Sensor/Reader,vWC %,Temp °C,Bulk EC (us/cm),pwEC (ms/cm),OBS
+13/09/2022 15:00,CWT THC-S/Arduino,"37,00","22,90",954,"4,090",Luzes ON
+,Teros 12/ZSC,"36,10","22,60",733,"4,617",
+13/09/2022 18:30,CWT THC-S/Arduino,"42,00","23,50",1.074,"3,770","Rega 3%/120ml @ 2.5 EC
+Medição aprox. 20 min após a rega"
+,Teros 12/ZSC,"40,10","24,30",809,"4,209",
+13/09/2022 21:00,CWT THC-S/Arduino,"43,00",23.9,1.025,"3,400","Rega 3%/120ml @ 2.5 EC
+Medição aprox. 20 min após a rega"
+,Teros 12/ZSC,"40,80","24,40",776,"3,859",
+13/09/2022 22:30,CWT THC-S/Arduino,"43,30","24,20",993,"3,220","Rega 3%/120ml @ 2.5 EC
+Medição aprox. 20 min após a rega"
+,Teros 12/ZSC,"41,40","24,80",746,"3,657",
+13/09/2022 23:30,CWT THC-S/Arduino,"43,50","24,30",965,"3,150","Rega 3%/120ml @ 2.5 EC
+Medição aprox. 20 min após a rega"
+,Teros 12/ZSC,"41,50","24,90",718,"3,467",
+14/09/2022 00:35,CWT THC-S/Arduino,"43,50","24,40",943,"3,070","Rega 3%/120ml @ 2.5 EC
+Medição aprox. 20 min após a rega"
+,Teros 12/ZSC,"41,50","25,10",698,"3,365",
+14/09/2022 02:20,CWT THC-S/Arduino,"43,40","24,60",920,"2,990","Rega 3%/120ml @ 2.2 EC
+Medição aprox. 20 min após a rega"
+,Teros 12/ZSC,"41,60","25,10",678,"3,260",
+14/09/2022 13:00,CWT THC-S/Arduino,"41,50","24,30",846,"3,010","Rega 3%/120ml @ 2.2 EC @ 03:00
+Medição aprox.10h após a rega"
+,Teros 12/ZSC,"39,80","23,90",628,"3,343",
+14/09/2022 16:30,CWT THC-S/Arduino,"41,40","23,10",830,"2,930",Luzes ON
+,Teros 12/ZSC,"39,30","23,20",622,"3,265",
+14/09/2022 20:00,CWT THC-S/Arduino,"40,60","23,70",828,"3,020",Medição antes da primeira rega do dia
+,Teros 12/ZSC,"39,20","24,20",611,"3,316",
+14/09/2022 20:30,CWT THC-S/Arduino,"43,00","23,80",868,"2,870","Rega 3%/120ml @ 1.8 EC
+Medição aprox. 30 min após a rega"
+,Teros 12/ZSC,"41,20","24,30",640,"3,162",
+14/09/2022 21:30,CWT THC-S/Arduino,"43,40","23,80",846,"2,760","Rega 3%/120ml @ 1.8 EC
+Medição aprox.30 min após a rega"
+,Teros 12/ZSC,"41,40","24,40",627,"3,052",
+14/09/2022 22:50,CWT THC-S/Arduino,"43,40","24,00",831,"2,710","Rega 3%/120ml @ 1.8 EC
+Medição aprox. 50 min após a rega"
+,Teros 12/ZSC,"41,50","24,50",612,"2,961",
+15/09/2022 00:00,CWT THC-S/Arduino,"43,50","24,10",808,"2,620","Rega 3%/120ml @ 1.7 EC
+Medição aprox.30 min após a rega"
+,Teros 12/ZSC,"41,80","24,40",603,"2,868",
+15/09/2022 16:30,CWT THC-S/Arduino,"40,10","22,10",732,"2,750",Luzes ON
+,Teros 12/ZSC,"39,00","22,20",557,"3,115",
+15/09/2022 22:50,CWT THC-S/Arduino,"44,30","22,80",786,"2,500","Rega 3%/120ml @ 1.7 EC
+Medição aprox. 1h30 após a rega"
+,Teros 12/ZSC,"42,60","23,40",603,"2,793",
+16/09/2022 19:50,CWT THC-S/Arduino,"43,50","21,40",645,"2,120","Rega 1%/40ml @ 1.7 EC
+Medição aprox. 1h30 após a rega"
+,Teros 12/ZSC,"42,10","22,00",506,"2,412",
+17/09/2022 19:30,CWT THC-S/Arduino,"41,10","20,60",641,"2,320",Dry back
+,Teros 12/ZSC,"40,00","21,20",501,"2,633",
+19/09/2022 23:35,CWT THC-S/Arduino,"36,30","22,20",659,"2,930",Dry back
+,Teros 12/ZSC,"35,80","22,60",495,"3,244",
+20/09/2022 16:30,CWT THC-S/Arduino,"32,80","21,60",614,"3,270",Dry back
+,Teros 12/ZSC,"33,90","21,90",463,"3,412",
+20/09/2022 20:30,CWT THC-S/Arduino,"31,80","23,00",621,"3,470",Dry back
+,Teros 12/ZSC,"33,40","23,60",458,"3,432",
+21/09/2022 17:10,CWT THC-S/Arduino,"28,30","22,80",552,"3,800",Dry back
+,Teros 12/ZSC,"31,00","23,40",393,"3,452",
+21/09/2022 20:00,CWT THC-S/Arduino,"27,90","23,70",549,"3,860",Dry back
+,Teros 12/ZSC,"30,50","24,30",384,"3,467",
+22/09/2022 01:20,CWT THC-S/Arduino,"27,10","24,70",540,"3,980",Dry back
+,Teros 12/ZSC,"29,50","25,10",367,"3,535",
+22/09/2022 10:40,CWT THC-S/Arduino,"25,60","25,30",508,"4,150",Dry back
+,Teros 12/ZSC,"27,70","25,10",334,"3,722",
+22/09/2022 17:40,CWT THC-S/Arduino,"25,20","23,80",488,"4,160",Dry back
+,Teros 12/ZSC,"27,40","24,30",312,"3,578",
+22/09/2022 23:40,CWT THC-S/Arduino,"24,50","22,30",483,"4,280",Dry back
+,Teros 12/ZSC,"26,10","25,70",297,"3,774",
+23/09/2022 10:30,CWT THC-S/Arduino,"22,00","26,20",441,"4,760",Dry back
+,Teros 12/ZSC,"23,10","26,20",249,"4,202",
+24/09/2022 10:30,CWT THC-S/Arduino,"17,40","24,50",366,"6,300",Dry back
+,Teros 12/ZSC,"19,20","24,30",162,"4,602",
