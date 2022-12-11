@@ -69,10 +69,10 @@ We used a soil sensor from [ComWinTop](http://www.comwintop.com/), model THC-S w
 that all the calibration was done with this sensor. If you use other sensor models or from another manufacturers, it may 
 be necessary to recalibrate and adjust the source code (soon we will release a method and tools for this).
 
-[Sensor on AliExpress](https://pt.aliexpress.com/item/1005001524845572.html) (buy the THC-S model)<br>
-[Manual and reader software](https://wiki20210805.oss-cn-hongkong.aliyuncs.com/download/sensors/Smart_Agriculture/CWT%20soil%20sensor%20manual.zip) <br>
-[USB/RS485 Adapter](https://pt.aliexpress.com/item/33017179197.html) (Optional. If you want to take sensor measurements with a Windows PC via USB. Use that specific adapter. Others tested adapter models do not work!) <br>
-[More resources about CWT sensor](http://www.comwintop.com/index.php?s=index/category/index&id=144) <br>
+- [Sensor on AliExpress](https://pt.aliexpress.com/item/1005001524845572.html) (buy the THC-S model)<br>
+- [Manual and reader software](https://wiki20210805.oss-cn-hongkong.aliyuncs.com/download/sensors/Smart_Agriculture/CWT%20soil%20sensor%20manual.zip) <br>
+- [USB/RS485 Adapter](https://pt.aliexpress.com/item/33017179197.html) (Optional. If you want to take sensor measurements with a Windows PC via USB. Use that specific adapter. Others tested adapter models do not work!) <br>
+- [More resources about CWT sensor](http://www.comwintop.com/index.php?s=index/category/index&id=144) <br>
 
 You will also need:
 - Arduino of your choice (we use the Arduino Uno).
