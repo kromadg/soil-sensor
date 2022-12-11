@@ -66,7 +66,7 @@ Você precisará de um sensor de solo resistivo que meça a temperatura, a umida
 
 Foi utilizado um sensor de solo da marca [ComWinTop](http://www.comwintop.com/), modelo THC-S com interface RS485. Então 
 leve em conta que toda a calibração foi feita com este sensor. Se você usar outros modelos de sensores ou de outros 
-fabricantes, pode ser necessário recalibrar e ajustar o código-fonte.
+fabricantes, pode ser necessário recalibrar e ajustar o código-fonte (em breve iremos liberar um método e ferramentas para isso).
 
 - [Sensor no AliExpress](https://pt.aliexpress.com/item/1005001524845572.html) (compre o modelo THC-S)<br>
 - [Manual and software de leitura do sensor](https://wiki20210805.oss-cn-hongkong.aliyuncs.com/download/sensors/Smart_Agriculture/CWT%20soil%20sensor%20manual.zip) <br>

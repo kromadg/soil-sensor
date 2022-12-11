@@ -67,7 +67,7 @@ You will need a resistive soil sensor that measures soil temperature, moisture, 
 
 We used a soil sensor from [ComWinTop](http://www.comwintop.com/), model THC-S with RS485 interface. So take into account 
 that all the calibration was done with this sensor. If you use other sensor models or from another manufacturers, it may 
-be necessary to recalibrate and adjust the source code.
+be necessary to recalibrate and adjust the source code (soon we will release a method and tools for this).
 
 [Sensor on AliExpress](https://pt.aliexpress.com/item/1005001524845572.html) (buy the THC-S model)<br>
 [Manual and reader software](https://wiki20210805.oss-cn-hongkong.aliyuncs.com/download/sensors/Smart_Agriculture/CWT%20soil%20sensor%20manual.zip) <br>
