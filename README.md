@@ -140,6 +140,7 @@ https://aroya.io/en/knowledge-base/crash-courses/uniformity
 - [[Gonçalves] Influence of soil bulk density in a dystroferric red ultisoil moisture estimated by TDR](assets/nitossolo.pdf) <br>
 - [[G. C. Topp] Electromagnetic Determination of Soil Water Content](assets/topp1980.pdf) <br>
 - [[Yasser Hamed] Evaluation of the WET sensor compared to time domain reflectometry](assets/hamed.pdf)
+- [[Hilhorst] A Pore Water Conductivity Sensor](assets/hilhorst2000.pdf)
 
 #### Crop Steering References
 
