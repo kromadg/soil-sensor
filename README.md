@@ -64,7 +64,10 @@ You will also need:
 
 ![img_8.png](assets/img_8.png)
 
-The sensor yellow wire goes in the `A` connector of RS485 module. The blue wire go in the `B` conector.
+- The sensor yellow wire goes in the `A` connector of RS485 module. 
+- The blue wire go in the `B` connector of RS485 module. 
+- The sensor black wire go in Arduino GND.
+- Th sensor red/brown wire go in Arduino 5V.
 
 ### Programming
 
