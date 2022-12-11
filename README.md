@@ -1,3 +1,18 @@
+## Index
+
+- [Introduction](#introduction)
+  - [Data and analysis](#data-and-analysis)
+- [Hardware](#hardware)
+  - [Schematics](#schematics)
+- [Programming](#programming)
+- [Known Problems](#known-problems)
+  - [Different sensor models and manufacturers](#different-sensor-models-and-manufacturers)
+  - [Measurements between different sensors and sites](#measurements-between-different-sensors-and-sites)
+  - [Sensor positioning (sensor alignment tool)](#sensor-positioning)
+  - [Uniformity](#uniformity)
+- [References](#references)
+  - [Crop Steering References](#crop-steering-references)
+
 ### Introduction
 
 This project arose from the need to use generic resistive sensors for use with [crop steering](#crop-steering-references).
@@ -40,7 +55,7 @@ _Generic sensor readings with Arduino_
 ![img_7.png](assets/img_7.png)
 _Teros 12 sensor readings with ZSC and Zentra app_
 
-### The hardware
+### Hardware
 
 You will need a resistive soil sensor that measures soil temperature, moisture, and conductivity (EC).
 
@@ -60,7 +75,7 @@ You will also need:
 - Jumper/dupont cables.
 - [OLED Display module](https://pt.aliexpress.com/item/1005004971492089.html) (optional)
 
-### Schematics:
+#### Schematics
 
 ![img_8.png](assets/img_8.png)
 
