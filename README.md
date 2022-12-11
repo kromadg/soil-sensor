@@ -1,4 +1,10 @@
-## Index
+# Soil Sensor Calibration and Measurement
+
+A tool to calibrate and measure pwEC with generic resistive sensors and Arduino.
+
+_Leia em outros idiomas: [Português Brasileiro](README.pt-br.md)_
+
+## Table of Contents
 
 - [Introduction](#introduction)
   - [Data and analysis](#data-and-analysis)
