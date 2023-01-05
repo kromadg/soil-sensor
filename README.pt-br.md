@@ -1,6 +1,6 @@
 # Calibração e Medição de Sensores de Solo
 
-Uma ferramenta para calibrar e medir pwEC com sensores resistivos genéricos e Arduino.
+Uma ferramenta para calibrar e medir pwEC com sensores TDR genéricos e Arduino.
 
 ## Índice
 
@@ -19,7 +19,7 @@ Uma ferramenta para calibrar e medir pwEC com sensores resistivos genéricos e A
 
 ### Introdução
 
-Este projeto surgiu da necessidade de utilizar sensores resistivos genéricos para uso com [crop steering](#referências-sobre-crop-steering).
+Este projeto surgiu da necessidade de utilizar sensores TDR genéricos para uso com [crop steering](#referências-sobre-crop-steering).
 
 Na prática do _crop steering_, é muito comum o uso e medição do _pore water EC_ (pwEC), que é calculado a partir da 
 medição da permissividade dielétrica
@@ -62,11 +62,13 @@ _Leituras do sensor Teros 12 com ZSC (spot check bluetooth) e o aplicativo Zentr
 
 ### Hardware
 
-Você precisará de um sensor de solo resistivo que meça a temperatura, a umidade e a condutividade do solo (EC).
+Você precisará de um sensor de solo TDR que meça a temperatura, a umidade e a condutividade do solo (EC).
 
 Foi utilizado um sensor de solo da marca [ComWinTop](http://www.comwintop.com/), modelo THC-S com interface RS485. Então 
 leve em conta que toda a calibração foi feita com este sensor. Se você usar outros modelos de sensores ou de outros 
 fabricantes, pode ser necessário recalibrar e ajustar o código-fonte (em breve iremos liberar um método e ferramentas para isso).
+
+![thc-s_sensor.jpg](assets/thc-s_sensor.jpg) <br>
 
 - [Sensor no AliExpress](https://pt.aliexpress.com/item/1005001524845572.html) (compre o modelo THC-S)<br>
 - [Manual and software de leitura do sensor](https://wiki20210805.oss-cn-hongkong.aliyuncs.com/download/sensors/Smart_Agriculture/CWT%20soil%20sensor%20manual.zip) <br>
@@ -106,7 +108,7 @@ Como afirmado anteriormente, todos os cálculos e software apresentados aqui for
 o THC-S da ComWinTop e o Teros 12 da Metergroup.
 
 Sabe-se que diferentes sensores do mesmo tipo tendem a ter medições muito próximas, pelo menos nos modelo profissionais 
-mais precisos. Portanto, é possível que essas calibrações funcionem com muitos sensores resistivos similares aos do CWT.
+mais precisos. Portanto, é possível que essas calibrações funcionem com muitos sensores TDR similares aos do CWT.
 
 Porém, dado o menor grau de precisão, além de possivelmente serem sensores genéricos sem alto padrão de fabricação,
 pode acontecer que as medições sejam muito diferentes do esperado. Nesse caso, tente fazer suas próprias medições e 
@@ -160,8 +162,9 @@ https://aroya.io/en/knowledge-base/crash-courses/uniformity
 - [[Kameyama] Measurement of solid phase permittivity for volcanic soils by time domain reflectometry](assets/kameyama2008.pdf) <br>
 - [[Gonçalves] Influência da densidade do solo na estimativa da umidade ... por meio da técnica de TDR](assets/nitossolo.pdf) <br>
 - [[G. C. Topp] Electromagnetic Determination of Soil Water Content](assets/topp1980.pdf) <br>
-- [[Yasser Hamed] Evaluation of the WET sensor compared to time domain reflectometry](assets/hamed.pdf)
-- [[Hilhorst] A Pore Water Conductivity Sensor](assets/hilhorst2000.pdf)
+- [[Yasser Hamed] Evaluation of the WET sensor compared to time domain reflectometry](assets/hamed.pdf) <br>
+- [[Hilhorst] A Pore Water Conductivity Sensor](assets/hilhorst2000.pdf) <br>
+- [[Gaskin] Measurement of Soil Water Content Using a Simplified Impedance Measuring Technique](assets/gaskin1996.pdf)
 
 #### Referências sobre Crop Steering
 
