@@ -88,17 +88,17 @@ You will also need:
 ![img_8.png](assets/img_8.png)
 
 - The sensor yellow wire goes in the `A` connector of RS485 module. 
-- The blue wire go in the `B` connector of RS485 module. 
+- The senor blue wire go in the `B` connector of RS485 module. 
 - The sensor black wire go in Arduino GND.
 - Th sensor red/brown wire go in Arduino 5V.
 
 ### Programming
 
-Just open Arduino IDE, load the [soil_sensor.ino](soil_sensor.ino) to your Arduino and watch
+Just open Arduino IDE, load the [soil_sensor.ino](src/soil_sensor.ino) to your Arduino and watch
 Monitor serial (default `115200` baud).
 
 If you want a spot check that doesn't need a PC to take readings, use a display module. Here I used an 
-Adafruit-like OLED Display module with 128x64 pixels. See [soil_sensor_display.ino](soil_sensor_display.ino) code.
+Adafruit-like OLED Display module with 128x64 pixels. See [soil_sensor_display.ino](src/soil_sensor_display.ino) code.
 
 ### Known Problems
 

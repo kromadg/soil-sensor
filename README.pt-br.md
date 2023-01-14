@@ -93,12 +93,12 @@ Também vai precisar:
 
 ### Software
 
-Basta abrir o Arduino IDE, carregar o [soil_sensor.ino](soil_sensor.ino) no seu Arduino e observar o monitor serial 
+Basta abrir o Arduino IDE, carregar o [soil_sensor.ino](src/soil_sensor.ino) no seu Arduino e observar o monitor serial 
 (padrão `115200` baud).
 
 Se deseja fazer verificações pontuais in loco que não necessitem de um computador para fazer as leituras, use um módulo 
 de display do Arduino. Aqui usei um módulo de Diplay OLED Adafruit-like de 128x64 pixels. 
-Veja o código-fonte [soil_sensor_display.ino](soil_sensor_display.ino).
+Veja o código-fonte [soil_sensor_display.ino](src/soil_sensor_display.ino).
 
 ### Problemas Conhecidos
 

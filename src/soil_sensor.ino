@@ -1,12 +1,5 @@
 #include <SoftwareSerial.h>
 #include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
-
-#define SCREEN_WIDTH 128    // OLED display width, in pixels
-#define SCREEN_HEIGHT 64    // OLED display height, in pixels
-#define OLED_RESET -1       // Reset pin # (or -1 if sharing Arduino reset pin)
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 #define RE 8
 #define DE 7
@@ -26,25 +19,12 @@ void setup() {
     digitalWrite(RE, LOW);
     digitalWrite(DE, LOW);
 
-    // Initializes display
-    display.begin(SSD1306_SWITCHCAPVCC, 0x3C); // initialize with the I2C addr 0x3C (128x64)
-    delay(500);
-    display.clearDisplay();
-    display.setCursor(13, 15);
-    display.setTextSize(1);
-    display.setTextColor(WHITE);
-    display.println(" THC Soil Sensor");
-    display.setCursor(21, 35);
-    display.setTextSize(1);
-    display.print("Initializing...");
-    display.display();
-    delay(5000);
+
+    delay(100);
 }
 
 void loop() {
-    // put your main code here, to run repeatedly:
-
-    /**************Soil EC Reading*******************/
+    /************** Soil EC Reading *******************/
     digitalWrite(DE, HIGH);
     digitalWrite(RE, HIGH);
     memset(sensor_values, 0, sizeof(sensor_values));
@@ -64,23 +44,26 @@ void loop() {
 
     delay(250);
 
+    // get sensor response data
     float soil_hum = 0.1 * int(sensorResponse[3] << 8 | sensorResponse[4]);
     float soil_temp = 0.1 * int(sensorResponse[5] << 8 | sensorResponse[6]);
     int soil_ec = int(sensorResponse[7] << 8 | sensorResponse[8]);
 
-    // change: quadratic aproximation of VWC from CWT sensor to Teros 12 sensor
+    /************* Calculations and sensor corrections *************/
+    // change: quadratic aproximation of VWC from CWT sensor to Teros 12 sensor.
+    // Just in case or for tests. The VWC of Teros and chinese sensor are very close (see reference spreadsheet).
     //soil_hum = -0.0134 * soil_hum * soil_hum + 1.6659 * soil_hum - 6.1095;
 
     // change: cubic aproximation of BULK EC from CWT sensor to Teros 12 sensor (more precise)
     soil_ec = 0.0000014403 * soil_ec * soil_ec * soil_ec - 0.0036 * soil_ec * soil_ec + 3.7525 * soil_ec - 814.1833;
 
-    // soil_temp foi deixada a mesma pois os valores do teros e do sensor chines sao parecidos
+    // soil_temp was left the same because the Teros and chinese sensor values are similar
 
     // quadratic aproximation
     // the teros bulk_permittivity was calculated from the teros temperature, teros bulk ec and teros pwec by Hilhorst 2000 model
     float soil_apparent_dieletric_constant = 1.3088 + 0.1439 * soil_hum + 0.0076 * soil_hum * soil_hum;
 
-    float soil_bulk_permittivity = soil_apparent_dieletric_constant;  /// hammed 2015 (apparent_dieletric_constant is the real part of permittivity)
+    float soil_bulk_permittivity = soil_apparent_dieletric_constant;  /// Hamed 2015 (apparent_dieletric_constant is the real part of permittivity)
     float soil_pore_permittivity = 80.3 - 0.37 * (soil_temp - 20); /// same as water 80.3 and corrected for temperature
 
     // converting bulk EC to pore water EC
@@ -105,40 +88,4 @@ void loop() {
     Serial.print("soil_bulk_permittivity: ");
     Serial.println(soil_bulk_permittivity);
     delay(2000);
-
-    display.clearDisplay();
-
-    display.setTextSize(1);
-    display.setCursor(0, 0);
-    display.print("Humi:  ");
-    display.setTextSize(2);
-    display.print(soil_hum);
-    display.setTextSize(1);
-    display.print(" %");
-
-    display.setTextSize(1);
-    display.setCursor(0, 17);
-    display.print("Temp:  ");
-    display.setTextSize(2);
-    display.print(soil_temp);
-    display.setTextSize(1);
-    display.print(" C");
-
-    display.setTextSize(1);
-    display.setCursor(0, 34);
-    display.print("EC:    ");
-    display.setTextSize(2);
-    display.print(soil_ec);
-    display.setTextSize(1);
-    display.print(" us/cm");
-
-    display.setTextSize(1);
-    display.setCursor(0, 50);
-    display.print("pwEC:  ");
-    display.setTextSize(2);
-    display.print(soil_pw_ec);
-    display.setTextSize(1);
-    display.print(" dS/m");
-
-    display.display();
 }
