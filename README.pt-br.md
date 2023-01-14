@@ -100,6 +100,9 @@ Se deseja fazer verificações pontuais in loco que não necessitem de um comput
 de display do Arduino. Aqui usei um módulo de Diplay OLED Adafruit-like de 128x64 pixels. 
 Veja o código-fonte [soil_sensor_display.ino](src/soil_sensor_display.ino).
 
+Se deseja utilizar o sensor com um microcontrolador com wifi, veja a postagem de [@danielfppps](https://github.com/danielfppps) em seu blog 
+sobre [como utilizar esse sensor com NodeMCUv3](https://scienceinhydroponics.com/2023/01/connecting-a-low-cost-tdr-moisture-content-ec-temp-sensor-to-a-nodemcuv3.html).
+
 ### Problemas Conhecidos
 
 #### Sensores de diferentes modelos e fabricantes
