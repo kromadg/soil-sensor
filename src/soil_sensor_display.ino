@@ -68,12 +68,28 @@ void loop() {
     float soil_temp = 0.1 * int(sensorResponse[5] << 8 | sensorResponse[6]);
     int soil_ec = int(sensorResponse[7] << 8 | sensorResponse[8]);
 
-    // change: quadratic aproximation of VWC from CWT sensor to Teros 12 sensor
+    /**
+     * Soil VWC correction. Test and use if works for you.
+     */
+    // change: quadratic aproximation of VWC from CWT sensor to Teros 12 sensor.
     // Just in case or for tests. The VWC of Teros and chinese sensor are very close (see reference spreadsheet).
     //soil_hum = -0.0134 * soil_hum * soil_hum + 1.6659 * soil_hum - 6.1095;
 
-    // change: cubic aproximation of BULK EC from CWT sensor to Teros 12 sensor (more precise)
-    soil_ec = 0.0000014403 * soil_ec * soil_ec * soil_ec - 0.0036 * soil_ec * soil_ec + 3.7525 * soil_ec - 814.1833;
+    /**
+     * Bulk EC correction. Choose one, test and uncomment if works for you.
+     */
+    // CHOOSE ONE: cubic aproximation of BULK EC from CWT sensor to Teros 12 sensor (more precise)
+    //soil_ec = 0.0000014403 * soil_ec * soil_ec * soil_ec - 0.0036 * soil_ec * soil_ec + 3.7525 * soil_ec - 814.1833;
+
+    // CHOOSE ONE: This equation was obtained from calibration using distilled water and a 1.1178mS/cm solution.
+    // Change by @danielfppps >> https://github.com/kromadg/soil-sensor/issues/3#issuecomment-1383959976
+    soil_ec = 1.93 * soil_ec - 270.8;
+
+    /**
+     * Bulk EC temperature correction. Test and use if works for you.
+     */
+    // Soil EC temp correction based on the Teros 12 manual. https://github.com/kromadg/soil-sensor/issues/1
+    soil_ec = soil_ec / (1.0 + 0.019 * (soil_temp - 25));
 
     // soil_temp foi deixada a mesma pois os valores do teros e do sensor chines sao parecidos
 

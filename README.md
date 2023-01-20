@@ -100,7 +100,7 @@ Monitor serial (default `115200` baud).
 If you want a spot check that doesn't need a PC to take readings, use a display module. Here I used an 
 Adafruit-like OLED Display module with 128x64 pixels. See [soil_sensor_display.ino](src/soil_sensor_display.ino) code.
 
-If you want to use a wifi microcontroller like NodeMCU, see [@danielfppps](https://github.com/danielfppps) blog post 
+If you want to use a Wi-Fi microcontroller like NodeMCU, see [@danielfppps](https://github.com/danielfppps) blog post 
 about [using these sensor with a NodeMCUv3](https://scienceinhydroponics.com/2023/01/connecting-a-low-cost-tdr-moisture-content-ec-temp-sensor-to-a-nodemcuv3.html).
 
 ### Known Problems
